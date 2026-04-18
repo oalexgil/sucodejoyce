@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Joyce Soares Designer</title>
+  <meta name="description" content="Entre em contato com Joyce Soares para projetos de design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav-logo">suco<em>de</em>joyce</a>
+    <div class="nav-links">
+      <a href="../index.html">work</a>
+      <a href="about.html">about</a>
+      <a href="contact.html" class="active">contact</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../index.html">work</a>
+    <a href="about.html">about</a>
+    <a href="contact.html">contact</a>
+  </div>
+
+  <!-- HERO -->
+  <header class="contact-hero">
+    <p class="about-tagline reveal">— vamos trabalhar juntos</p>
+    <h1 class="contact-title reveal">
+      Fala<br/>
+      <em>comigo.</em>
+    </h1>
+  </header>
+
+  <!-- CONTACT GRID -->
+  <div class="contact-grid">
+
+    <!-- LEFT: Info -->
+    <div class="contact-info reveal">
+      <h3>Rio de Janeiro, Brasil</h3>
+      <p>
+        Disponível para projetos de social media design, identidade visual, media kits, apresentações e conteúdo digital. Aberta a propostas remotas e presenciais.
+      </p>
+
+      <div class="contact-direct">
+        <a href="mailto:joyce.soaresg2@gmail.com">
+          <span>Email</span>
+          <span>joyce.soaresg2@gmail.com ↗</span>
+        </a>
+        <a href="https://linkedin.com/in/joyce-soares-gomes-192257160" target="_blank">
+          <span>LinkedIn</span>
+          <span>/in/joyce-soares-gomes ↗</span>
+        </a>
+      </div>
+
+      <div style="margin-top: 48px;">
+        <p style="font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--mid);margin-bottom:20px;">— serviços</p>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;align-items:center;gap:12px;font-size:0.88rem;">
+            <span style="color:var(--accent);">→</span> Social Media Design
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:0.88rem;">
+            <span style="color:var(--accent);">→</span> Identidade Visual & Branding
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:0.88rem;">
+            <span style="color:var(--accent);">→</span> Media Kits & Apresentações
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:0.88rem;">
+            <span style="color:var(--accent);">→</span> Conteúdo Digital & Thumbnails
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:0.88rem;">
+            <span style="color:var(--accent);">→</span> Convites & Papelaria
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <form class="contact-form reveal" id="contact-form" novalidate>
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="service">Tipo de projeto</label>
+        <select id="service" name="service">
+          <option value="">Selecione um serviço</option>
+          <option value="social-media">Social Media Design</option>
+          <option value="branding">Identidade Visual / Branding</option>
+          <option value="media-kit">Media Kit</option>
+          <option value="presentation">Apresentação / Slides</option>
+          <option value="invitation">Convite / Papelaria</option>
+          <option value="other">Outro</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="budget">Orçamento estimado</label>
+        <select id="budget" name="budget">
+          <option value="">Selecione uma faixa</option>
+          <option value="ate-500">Até R$ 500</option>
+          <option value="500-1500">R$ 500 – R$ 1.500</option>
+          <option value="1500-3000">R$ 1.500 – R$ 3.000</option>
+          <option value="acima-3000">Acima de R$ 3.000</option>
+          <option value="a-combinar">A combinar</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" placeholder="Conte um pouco sobre o projeto, prazos e referências que você goste..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Enviar mensagem</button>
+
+      <p style="font-size:0.72rem;color:var(--mid);margin-top:8px;">
+        Retorno em até 48h úteis.
+      </p>
+    </form>
+
+  </div>
+
+  <footer class="footer">
+    <span>sucodejoyce © 2025</span>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/joyce-soares-gomes-192257160" target="_blank">LinkedIn ↗</a>
+      <a href="mailto:joyce.soaresg2@gmail.com">Email ↗</a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
